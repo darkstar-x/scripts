@@ -36,14 +36,14 @@ PORT_5GHZ="192.168.1.26:5555"
 echo -e "${YLW}➩ Iniciando o Android Debug Brindge. . .${OFF}"
 
 # Start ADB not is required root
-alacritty -v -e adb start-server
+#alacritty -v -e adb start-server
 
 # Connect on port
 
 if [ "${initial_state}" = 1 ]; then
   # Default is 5Ghz
   echo -e "${YLW}➫ Trying to connect to the port:${PORT_5GHZ}${OFF}"
-  alacritty -v -e adb kill-server
+#  alacritty -v -e adb kill-server
   #adb connect ${PORT_5GHZ}
   initial_state=0
   
