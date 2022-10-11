@@ -16,15 +16,19 @@ if [ "$power_level" -le 20 ]; then
   echo "%{F#ff0003} %{F-}${power_level}% ${icon}"
 fi
 
-if [[ "$power_level" -gt 20 && "$power_level" -le 65 ]]; then
+if [[ "$power_level" -gt 20 && "$power_level" -le 45 ]]; then
   echo "%{F#ffb900} %{F-}${power_level}% ${icon}"
 fi
 
+if [[ "$power_level" -gt 45 && "$power_level" -le 65 ]]; then
+  echo "%{F#ffb900} %{F-}${power_level}% ${icon}"
+fi
+
 if [[ "$power_level" -gt 65 && "$power_level" -le 85 ]]; then
-  echo "%{F#61ff00}%{F-}${power_level}% ${icon}"
+  echo "%{F#61ff00} %{F-}${power_level}% ${icon}"
 fi
 
 if [[ "$power_level" -gt 90 ]]; then
-  echo "%{F#61ff00}%{F-}${power_level}% ${icon}"
+  echo "%{F#61ff00} %{F-}${power_level}% ${icon}"
 fi
 
