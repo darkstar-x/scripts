@@ -2,13 +2,13 @@
 
 int main()
 {
-  int num, _num, __num, result;
+  int num, _num, result;
 
   printf("Digite os valores: ");
-  scanf("%d%d%d", &num, &_num, &__num);
+  scanf("%d%d", &num, &_num);
 
 
-  printf("Sum: %d\n",result = (num + _num + __num));
+  printf("Sum: %d\n",result = (num + _num));
 
   return 0;
 }
