@@ -1,20 +1,9 @@
 #!/usr/bin/env bash
 
-# Setters
-default='leo'
-
-# Check
-echo 'Enter a word: '
-read word
-
-test "$word" = "$default"
-
-if [ "$?" != "1" ]; then
-  echo 'This word is true'
-else
-  echo 'This word is false'
-fi
-
-sleep 3s
-
-echo 'Exiting. . .'
+arr=('\033[0;31m' '' '' '\033[0;33m' '' '' '' '\033[0;32m' '' '' '' )
+while true;do
+  for x in "${arr[@]}";do
+    echo -en "\r $x"
+    sleep .3
+  done
+done

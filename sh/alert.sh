@@ -22,5 +22,5 @@ while true; do
       initial_count=0
   fi
 
-  sleep 2s
+  sleep 1s
 done

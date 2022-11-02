@@ -29,9 +29,5 @@ FORMAT="$FORMAT $ICON ($CHARGE%)"
 # Display on bar
 echo $FORMAT
 
-
-
-
 # user_modules.ini
 # create a custom module in polybar and link the above script file_name to the module
-
