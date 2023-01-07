@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#################################
+# Baterry script for polybar    #
+# Author: leonardi melo         #
+#################################
+
 # Reset
 Color_Off='\033[0m'       # Text Reset
 
